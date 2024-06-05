@@ -1,0 +1,128 @@
+body {
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:hsla(152, 23%, 55%, 0.336);
+   
+}
+
+.container {
+    max-width: 1200px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+h1 {
+    color: hsl(0, 0%, 100%); /* Цвет имени бренда */
+    margin: 0;
+    max-width: 400px;
+
+}
+
+.logo img {
+    max-width: 200px; /* Размер логотипа */
+    height: auto;
+}
+
+footer {
+    background-color: hwb(151.76deg 40.78% 45.88% / 24%); /* Цвет фона подвала */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: hsla(152, 30%, 37%, 0.496);
+    margin-bottom: 50px;
+  }
+
+  .icon {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .icon:hover {
+    color: #ffffff;
+  }
+  header {
+  
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 0 20px;
+  text-align: center;
+    background-color: rgb(104, 138, 122);
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    display: contents;
+    text-align: center;
+}
+
+.contact-info {
+    gap: 100px;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.contact-info div {
+    margin-right: 30px;
+}
+
+    
+@media screen and (max-width: 600px) {
+
+    .contact-info{
+        display: block;
+        
+    }
+    .logo img {
+        max-width: 150px; /* Размер логотипа */}
+        .textt{
+            font-size: large;
+        }
+    .info{
+        border: 2px solid black;
+        margin-bottom: 50px;
+    }
+}

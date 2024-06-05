@@ -1,0 +1,92 @@
+body {
+    margin: 0% auto;
+    max-width: 1200px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background: rgb(107,140,124);
+    background-color :  rgb(104 138 122) 0%,;
+    background-size: cover;
+    background-position: center;
+  
+}
+.gallery img:hover {
+    transform: scale(1.1);
+  }
+.gallery-wrapper {
+    overflow-x: auto; /* Добавляем прокрутку по горизонтали */
+    white-space: nowrap; /* Запрещаем перенос строк */
+}
+
+.gallery {
+    display: inline-flex; /* Используем inline-flex для горизонтального размещения видео */
+    align-items: center; /* Выравниваем по центру по вертикали */
+}
+
+.gallery video {
+    margin: 0 10px; /* Добавляем небольшие отступы между видео */
+    max-width: 320px; /* Размер видео */
+    height: auto;
+}
+header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caption{
+    
+    font-size: xx-large;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.logo {
+    order: 1; /* Задаем порядок элемента */
+}
+
+h1 {
+    font-size: xxx-large;
+  
+    margin: 0;
+    order: 2; /* Задаем порядок элемента */
+    color: white;
+    margin-right: 100px;
+}
+
+.logo img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Медиа-запрос для устройств с шириной экрана менее 600 пикселей */
+@media (max-width: 600px) {
+    .logo img {
+        max-width: 120px;
+    }
+    h1{
+    
+        font-size: 26px;
+    
+      
+    }
+}
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: hsla(152, 29%, 42%, 0.314);
+  
+  }
+
+  .icon {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .icon:hover {
+    color: #ffffff;
+  }

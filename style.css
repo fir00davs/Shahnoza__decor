@@ -1,0 +1,157 @@
+/* Общие стили */
+
+body {
+
+  margin: 0% auto;
+  max-width: 1200px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(107, 140, 124);
+  background: linear-gradient(91deg, rgb(104 138 122) 0%, rgb(104 138 122) 21%, rgba(128, 167, 149, 1) 48%, rgba(174, 209, 192, 1) 67%);
+  background-size: cover;
+  
+  background-position: center;
+}
+
+.logo img {
+  max-width: 200px;
+  /* Размер логотипа */
+  height: auto;
+}
+
+.container {
+  max-width: 1600px;
+  /* Ширина контейнера */
+  margin: 0 auto;
+  /* Центрирование контейнера */
+}
+ 
+.image {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  margin-right: 20px;
+}
+
+.gallery {
+  display: flex;
+   overflow-x: auto;
+  white-space: nowrap;
+  
+ 
+
+
+}
+
+.image-grid {
+
+  display: flex;
+
+
+  gap: 45px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.grid-wrapper {
+  overflow-x: auto;
+  /* Добавляем прокрутку по горизонтали */
+  white-space: nowrap;
+  /* Запрещаем перенос строк */
+  margin-bottom: 20px;
+  /* Добавляем отступ снизу */
+  text-align: center;
+  /* Центрируем видео внутри галереи */
+}
+
+.gallery video {
+  margin: 0 10px;
+  /* Добавляем небольшие отступы между видео */
+  max-width: 320px;
+  /* Размер видео */
+  height: auto;
+}
+
+/* Стили для ярлыков */
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: hsla(152, 29%, 42%, 0.314);
+  margin-bottom: 50px;
+
+}
+
+.title {
+  font-size: larger;
+  text-align: center;
+  color: white;
+}
+
+.icon {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ffffff;
+}
+/* Добавлен медиа-запрос для экранов шириной менее 600px */
+@media screen and (max-width: 600px) {
+  body {
+    background-size: auto; /* Убираем cover для мобильных экранов */
+  }
+
+  .logo img {
+    max-width: 100px; /* Уменьшаем размер логотипа */
+  }
+
+  .container {
+    padding: 0 20px; /* Добавляем отступы по бокам контейнера */
+  }
+
+  .image {
+    width: 100%; 
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  header {
+    padding: 10px 0; /* Уменьшаем отступы в шапке */
+  }
+
+  h1 {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .icon-container {
+   
+    align-items: center; /* Выравниваем ярлыки по центру */
+    padding: 10px 0; /* Уменьшаем отступы */
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .icon {
+    margin-bottom: 10px; /* Добавляем отступы между ярлыками */
+    font-size: 16px; /* Уменьшаем размер шрифта */
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+}
